@@ -1,2 +1,2 @@
 # Azure-Resume-Challenge
-My own azure cloud resume challenge
+My own ACG resume challenge
