@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /*function getVisitCount() {
     $.ajax({
 */
-const functionAPI = '';
+const functionAPI = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () => {
     let count = 30;
