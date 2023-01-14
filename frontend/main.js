@@ -5,11 +5,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /*function getVisitCount() {
     $.ajax({
 */
-const functionAPI = 'http://localhost:7071/api/GetResumeCounter';
+
+const functionAPIUrl = 'https://getresumecounterz.azurewebsites.net/api/GetResumeCounter?code=-ECKAwteDCb9lfIretxpaIjtX6GD9aYNfZeLYQmS2vKXAzFuFx8XZQ==';
+const localfunctionAPI = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(functionAPI).then(response => {
+    fetch(functionAPIUrl).then(response => {
         return response.json();
     }).then(response => {
         console.log("Website called function API")
